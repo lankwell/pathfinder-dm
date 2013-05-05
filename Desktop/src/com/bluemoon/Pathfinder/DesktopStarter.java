@@ -1,4 +1,4 @@
-package com.bluemoon.Pathfinder;
+package com.bluemoon.pathfinder;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
@@ -13,10 +13,10 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 public class DesktopStarter {
     public static void main(String[] args) {
         LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
-        cfg.title = "Title";
+        cfg.title = "Pathfinder DungeonMaster";
         cfg.useGL20 = true;
-        cfg.width = 800;
-        cfg.height = 480;
+        cfg.width = 1280;
+        cfg.height = 800;
         new LwjglApplication(new PathfinderDM(), cfg);
     }
 

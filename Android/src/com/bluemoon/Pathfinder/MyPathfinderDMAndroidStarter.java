@@ -1,6 +1,5 @@
-package com.bluemoon.Pathfinder;
+package com.bluemoon.pathfinder;
 
-import android.app.Activity;
 import android.os.Bundle;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
@@ -16,7 +15,7 @@ public class MyPathfinderDMAndroidStarter extends AndroidApplication {
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
         cfg.useAccelerometer = false;
         cfg.useCompass = false;
-        cfg.useWakelock = true;
+        cfg.useWakelock = false;
         cfg.useGL20 = true;
         initialize(new PathfinderDM(), cfg);
     }
